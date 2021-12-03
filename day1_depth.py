@@ -7,7 +7,7 @@ import sys
 def open_file():
   #going to open file and clean up data
   with open('./inputs/day1.txt', 'r') as f:
-    scrubbed = [int(x.strip()) for x in f.readlines()]    
+    scrubbed = [int(x.strip()) for x in f.readlines()]
     #ordered = sorted(scrubbed)
     return scrubbed
     
@@ -33,7 +33,6 @@ def part1(inp):
     previous = x
     pos += 1
 
-  
   return(count)
 '''t = time.time()
 part1(open_file())
@@ -59,7 +58,7 @@ def part2(inp):
     #print(f'{pos} - current={sum}, previous={previous}, count={count}, {flag}')
     previous = sum
     pos += 1
-    
+
   return(count)
 t = time.time()
 print(f'Part 1 - {part1(open_file())}')
